@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-image: url(images/fon\ 1.jpg)
+}
+
+.heading {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading h2 {
+    color: #006FC1;
+    font-size: 70px;
+}
+
+.container {
+    background-color: #01395E;
+    width: 90vmin;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 80px 50px;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px rgba(38, 33, 61, 0.2);
+}
+.search-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.search-box input {
+    padding: 5px;
+    width: 70%;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid #01395E;
+    font-size: 16px;
+    background: #fff;
+    color: black;
+}
+.search-box button {
+    padding: 15px 0;
+    width: 25%;
+    background-color: #9d0000;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    border-radius: 5px;
+}
+.result {
+    position: relative;
+}
+.result h3 {
+    font-size: 30px;
+    color: #ffffff;
+}
+.result .word {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+.result button {
+    background-color: transparent;
+    color: #9d0000;
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+.result .details {
+    display: flex;
+    gap: 10px;
+    color: #b3b6d4;
+    margin: 5px 0 20px 0;
+    font-size: 14px;
+}
+.word-meaning {
+    color: #e4e4e4;
+}
+.word-example {
+    color: #ce7a7a;
+    font-style: italic;
+    border-left: 5px solid #3f0e0e;
+    padding-left: 20px;
+    margin-top: 30px;
+}
+.error {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px; /* Adjust the gap between social icons */
+    position: absolute;
+    bottom: 20px; /* Adjust the distance from the bottom */
+    z-index: 4;
+    left: 46.5%;
+  }
+  
+  .social-icons img {
+    width: 40px; /* Adjust the size of the icons */
+    height: 40px;
+    transition: transform 0.2s ease; /* Add a smooth transition on hover */
+  }
+  
+  .social-icons img:hover {
+    transform: translateY(-5px); /* Move the icons up slightly on hover */
+  }
